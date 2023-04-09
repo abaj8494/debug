@@ -14,7 +14,7 @@ backtrace | bt | |
 list | l | |
 
 info gdb  					//Manual
-info locals 				        //Vars in local scope
+info locals 				//Vars in local scope
 info variables				//Vars declared outside current scope
 info functions				//Names and datatypes of all defined functions
 info b 						//List all breakpoints
@@ -50,5 +50,20 @@ command breakpoint_no		//Run user listed commands when breakpoint is hit
 file executable 			        //Load the executable for debugging from inside gdb
 quit						        //Quit (short: q)
 
+## TUI
+
+This is OP. Use it
+
+layout [option]
+options:
+    asm: assembly window only
+    next: next
+    prev: previous
+    regs: register window
+
+## Core Dumps
+
+ulimit -c unlimited
+echo "./core" > /proc/sys/kernel/core_pattern
 
 # LLDB
