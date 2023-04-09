@@ -6,6 +6,14 @@ Here are some commands that I have found helpful for these tools:
 
 # GDB
 
+to jump through loops quickly just set a breakpoint after the loop and then type continue to get there.
+use the tui.
+gdb program
+start -> runs until program til start of main. useful
+info locals
+p 7+8 yields 15.
+
+
 command | shortcut | description | usage
 next | n | steps forward into the code. executes the entire function if the next statement is a function call. (see dichotomy with step) |
 step | s | steps forward one instruction. if the next line is a function call it steps once into the function call. |
